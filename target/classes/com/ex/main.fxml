@@ -11,6 +11,8 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.Integer?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F0F3F9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ex.MainController">
    <children>
@@ -36,7 +38,17 @@
                                     <Font name="Rubik" size="14.0" />
                                  </font>
                               </Label>
-                              <ChoiceBox layoutX="342.0" layoutY="2.0" prefHeight="25.0" prefWidth="41.0" />
+                              <ChoiceBox layoutX="342.0" layoutY="2.0" prefHeight="25.0" prefWidth="41.0" value="3">
+                                 <items>
+                                    <FXCollections fx:factory="observableArrayList">
+                                       <Integer fx:value="1" />
+                                       <Integer fx:value="2" />
+                                       <Integer fx:value="3" />
+                                       <Integer fx:value="4" />
+                                       <Integer fx:value="5" />
+                                    </FXCollections>
+                                 </items>
+                              </ChoiceBox>
                               <Label layoutX="302.0" layoutY="6.0" text="Units:" />
                            </children>
                         </Pane>
