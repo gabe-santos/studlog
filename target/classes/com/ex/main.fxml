@@ -14,9 +14,9 @@
 <?import javafx.collections.FXCollections?>
 <?import java.lang.Integer?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F0F3F9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ex.MainController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #008080;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ex.MainController">
    <children>
-      <Text fill="#2c6bff" layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="StudLog" wrappingWidth="137.5283203125">
+      <Text fill="#ffffff" layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="StudLog" wrappingWidth="137.5283203125">
          <font>
             <Font name="Rubik Medium" size="32.0" />
          </font></Text>
@@ -28,7 +28,7 @@
                      <children>
                         <Pane layoutX="102.0" layoutY="24.0" prefHeight="38.0" prefWidth="397.0">
                            <children>
-                              <TextField layoutX="87.0" layoutY="2.0" prefHeight="25.0" prefWidth="202.0" style="-fx-border-style: none;">
+                              <TextField fx:id="textfield" layoutX="87.0" layoutY="2.0" prefHeight="25.0" prefWidth="202.0" style="-fx-border-style: none;">
                                  <font>
                                     <Font name="Rubik" size="14.0" />
                                  </font>
@@ -38,7 +38,7 @@
                                     <Font name="Rubik" size="14.0" />
                                  </font>
                               </Label>
-                              <ChoiceBox layoutX="342.0" layoutY="2.0" prefHeight="25.0" prefWidth="41.0" value="3">
+                              <ChoiceBox fx:id="choicebox" layoutX="342.0" layoutY="2.0" prefHeight="25.0" prefWidth="41.0" value="3">
                                  <items>
                                     <FXCollections fx:factory="observableArrayList">
                                        <Integer fx:value="1" />
@@ -54,7 +54,7 @@
                         </Pane>
                         <ButtonBar layoutX="173.0" layoutY="62.0" prefHeight="40.0" prefWidth="224.0">
                           <buttons>
-                            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #2c954b;" text="Add Class" textAlignment="CENTER" textFill="WHITE">
+                            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #008080;" text="Add Class" textAlignment="CENTER" textFill="WHITE">
                                  <font>
                                     <Font name="Rubik" size="13.0" />
                                  </font>
