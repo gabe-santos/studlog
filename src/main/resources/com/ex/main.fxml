@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.Integer?>
+<?import javafx.collections.FXCollections?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.ChoiceBox?>
@@ -11,8 +13,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-<?import javafx.collections.FXCollections?>
-<?import java.lang.Integer?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #008080;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ex.MainController">
    <children>
@@ -26,9 +26,9 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
                      <children>
-                        <Pane layoutX="102.0" layoutY="24.0" prefHeight="38.0" prefWidth="397.0">
+                        <Pane fx:id="rowOne" layoutX="102.0" layoutY="24.0" prefHeight="38.0" prefWidth="452.0">
                            <children>
-                              <TextField fx:id="textfield" layoutX="87.0" layoutY="2.0" prefHeight="25.0" prefWidth="202.0" style="-fx-border-style: none;">
+                              <TextField fx:id="classOne" layoutX="87.0" layoutY="2.0" prefHeight="25.0" prefWidth="202.0" style="-fx-border-style: none;">
                                  <font>
                                     <Font name="Rubik" size="14.0" />
                                  </font>
@@ -38,7 +38,7 @@
                                     <Font name="Rubik" size="14.0" />
                                  </font>
                               </Label>
-                              <ChoiceBox fx:id="choicebox" layoutX="342.0" layoutY="2.0" prefHeight="25.0" prefWidth="41.0" value="3">
+                              <ChoiceBox fx:id="choicebox1" layoutX="342.0" layoutY="2.0" prefHeight="25.0" prefWidth="41.0" value="3">
                                  <items>
                                     <FXCollections fx:factory="observableArrayList">
                                        <Integer fx:value="1" />
@@ -49,17 +49,99 @@
                                     </FXCollections>
                                  </items>
                               </ChoiceBox>
+                              <Button fx:id="classOneDelete" layoutX="390.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#deletePane" prefHeight="25.0" prefWidth="60.0" text="Delete" textAlignment="CENTER" />
                               <Label layoutX="302.0" layoutY="6.0" text="Units:" />
                            </children>
                         </Pane>
-                        <ButtonBar layoutX="173.0" layoutY="62.0" prefHeight="40.0" prefWidth="224.0">
+                        <Pane fx:id="rowTwo" layoutX="102.0" layoutY="60.0" prefHeight="38.0" prefWidth="452.0">
+                           <children>
+                              <TextField fx:id="classTwo" layoutX="87.0" layoutY="2.0" prefHeight="25.0" prefWidth="202.0" style="-fx-border-style: none;">
+                                 <font>
+                                    <Font name="Rubik" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutY="6.0" text="Class Name:">
+                                 <font>
+                                    <Font name="Rubik" size="14.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="choicebox2" layoutX="342.0" layoutY="2.0" prefHeight="25.0" prefWidth="41.0" value="3">
+                                 <items>
+                                    <FXCollections fx:factory="observableArrayList">
+                                       <Integer fx:value="1" />
+                                       <Integer fx:value="2" />
+                                       <Integer fx:value="3" />
+                                       <Integer fx:value="4" />
+                                       <Integer fx:value="5" />
+                                    </FXCollections>
+                                 </items>
+                              </ChoiceBox>
+                              <Button fx:id="classTwoDelete" layoutX="390.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#deletePane" prefHeight="25.0" prefWidth="60.0" text="Delete" textAlignment="CENTER" />
+                              <Label layoutX="302.0" layoutY="6.0" text="Units:" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="rowThree" layoutX="102.0" layoutY="96.0" prefHeight="38.0" prefWidth="452.0">
+                           <children>
+                              <TextField fx:id="classThree" layoutX="87.0" layoutY="2.0" prefHeight="25.0" prefWidth="202.0" style="-fx-border-style: none;">
+                                 <font>
+                                    <Font name="Rubik" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutY="6.0" text="Class Name:">
+                                 <font>
+                                    <Font name="Rubik" size="14.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="choicebox3" layoutX="342.0" layoutY="2.0" prefHeight="25.0" prefWidth="41.0" value="3">
+                                 <items>
+                                    <FXCollections fx:factory="observableArrayList">
+                                       <Integer fx:value="1" />
+                                       <Integer fx:value="2" />
+                                       <Integer fx:value="3" />
+                                       <Integer fx:value="4" />
+                                       <Integer fx:value="5" />
+                                    </FXCollections>
+                                 </items>
+                              </ChoiceBox>
+                              <Button fx:id="classThreeDelete" layoutX="390.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#deletePane" prefHeight="25.0" prefWidth="60.0" text="Delete" textAlignment="CENTER" />
+                              <Label layoutX="302.0" layoutY="6.0" text="Units:" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="rowFour" layoutX="102.0" layoutY="132.0" prefHeight="38.0" prefWidth="452.0">
+                           <children>
+                              <TextField fx:id="classFour" layoutX="87.0" layoutY="2.0" prefHeight="25.0" prefWidth="202.0" style="-fx-border-style: none;">
+                                 <font>
+                                    <Font name="Rubik" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutY="6.0" text="Class Name:">
+                                 <font>
+                                    <Font name="Rubik" size="14.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="choicebox4" layoutX="342.0" layoutY="2.0" prefHeight="25.0" prefWidth="41.0" value="3">
+                                 <items>
+                                    <FXCollections fx:factory="observableArrayList">
+                                       <Integer fx:value="1" />
+                                       <Integer fx:value="2" />
+                                       <Integer fx:value="3" />
+                                       <Integer fx:value="4" />
+                                       <Integer fx:value="5" />
+                                    </FXCollections>
+                                 </items>
+                              </ChoiceBox>
+                              <Button fx:id="classFourDelete" layoutX="390.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#deletePane" prefHeight="25.0" prefWidth="60.0" text="Delete" textAlignment="CENTER" />
+                              <Label layoutX="302.0" layoutY="6.0" text="Units:" />
+                           </children>
+                        </Pane>
+                        <ButtonBar layoutX="197.0" layoutY="200.0" prefHeight="40.0" prefWidth="207.0">
                           <buttons>
-                            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #008080;" text="Add Class" textAlignment="CENTER" textFill="WHITE">
+                            <Button fx:id="addButton" mnemonicParsing="false" onMouseClicked="#duplicatePane" prefHeight="26.0" prefWidth="133.0" style="-fx-background-color: #008080;" text="Add Class" textAlignment="CENTER" textFill="WHITE">
                                  <font>
                                     <Font name="Rubik" size="13.0" />
                                  </font>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #dee2e6;" text="Remove Class" textFill="#6c757d" />
+                              <Button fx:id="calculateButton" mnemonicParsing="false" onMouseClicked="#calculateUnits" style="-fx-background-color: #008080;" text="Calculate" textFill="WHITE" />
                           </buttons>
                         </ButtonBar>
                      </children>
