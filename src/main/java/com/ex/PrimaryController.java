@@ -2,6 +2,7 @@ package com.ex;
 
 import java.io.IOException;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 
 public class PrimaryController {
 
@@ -9,4 +10,5 @@ public class PrimaryController {
     private void switchToSecondary() throws IOException {
         App.setRoot("secondary");
     }
+
 }
